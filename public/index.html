@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finga Lickin Gud — Jamaican Food Sold Here | Bronx, NY</title>
+<meta name="description" content="Real Jamaican flavour, made right at home. Jerk chicken, steam fish, Saturday soups and more — open Friday, Saturday & Sunday on announced dates. 4015 Edson Ave, Bronx, New York.">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="/images/app-icon-192.png">
+<link rel="apple-touch-icon" href="/images/app-icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="#top">
+      <span class="monogram">FLG</span>
+      <span class="brand-name">FINGA LICKIN GUD<span>JAMAICAN FOOD SOLD HERE</span></span>
+    </a>
+    <nav class="topnav">
+      <a href="#menu">Menu</a>
+      <a href="#kitchen">Our Kitchen</a>
+      <a href="#track">Track Order</a>
+      <a href="#" id="adminNavLink">Admin Login</a>
+      <a class="btn small" href="#menu">Order Now</a>
+    </nav>
+    <button class="cart-btn" id="cartOpenBtn" type="button">Your Order <span class="cart-count" id="cartCount">0</span></button>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero" aria-label="Welcome">
+    <div class="fire-glow" aria-hidden="true"></div>
+    <div class="steam" aria-hidden="true"><i></i><i></i><i></i></div>
+    <span class="ember" style="left:34%;animation-delay:.4s" aria-hidden="true"></span>
+    <span class="ember" style="left:42%;animation-delay:2.1s" aria-hidden="true"></span>
+    <span class="ember" style="left:38%;animation-delay:3.6s" aria-hidden="true"></span>
+    <span class="ember" style="left:47%;animation-delay:1.2s" aria-hidden="true"></span>
+    <svg class="leaf" style="top:8px;right:6%;width:120px" viewBox="0 0 120 60" aria-hidden="true"><path d="M60 55 C40 30 20 18 2 14 C22 10 44 18 60 34 C76 18 98 10 118 14 C100 18 80 30 60 55Z" fill="#1d7a3a"/></svg>
+    <svg class="leaf" style="bottom:20px;left:2%;width:100px;animation-delay:1s" viewBox="0 0 120 60" aria-hidden="true"><path d="M60 55 C40 30 20 18 2 14 C22 10 44 18 60 34 C76 18 98 10 118 14 C100 18 80 30 60 55Z" fill="#1d7a3a"/></svg>
+    <div class="hero-in">
+      <div class="hero-copy">
+        <svg class="flag" viewBox="0 0 60 30" role="img" aria-label="Jamaican flag"><rect width="60" height="30" fill="#009B3A"/><polygon points="0,0 60,0 30,15" fill="#000"/><polygon points="0,30 60,30 30,15" fill="#000"/><polygon points="0,0 60,30 30,15" fill="#FED100" opacity="0"/><path d="M0 0 L60 30 M60 0 L0 30" stroke="#FED100" stroke-width="5"/><path d="M0 0 L60 30 M60 0 L0 30" stroke="#000" stroke-width="1.6"/></svg>
+        <h1>Real Jamaican Flavour. Made Right at Home.</h1>
+        <p class="lede">Good food. Warm hearts. A taste of home.</p>
+        <p class="hero-days">Open Friday, Saturday &amp; Sunday — on announced dates</p>
+        <p class="hero-contact">4015 Edson Ave, Bronx, New York &nbsp;·&nbsp; <a href="tel:+16466693814">(646) 669-3814</a></p>
+        <a class="btn" href="#menu">View the Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="section menu-section" id="menu">
+    <div class="wrap">
+      <h2 class="section-title">Cooked with Love. Full of Flavour.</h2>
+      <hr class="gold-rule">
+      <p class="menu-note">Every meal comes with <strong>both</strong> White Rice <strong>and</strong> Rice &amp; Peas, plus one free side of your choice — Festival, Bread, Salad or Fry Plantain.</p>
+      <div id="menuRoot"><p style="text-align:center;color:var(--muted)">Loading the menu…</p></div>
+    </div>
+  </section>
+
+  <!-- KITCHEN -->
+  <section class="section kitchen" id="kitchen">
+    <div class="split">
+      <img src="/images/jerk-chicken.jpg" alt="Jerk chicken served with rice and peas" loading="lazy"
+        onerror="this.onerror=null;this.src='/images/grandma-hero.jpg'">
+      <div class="split-copy">
+        <h2>From Our Home Kitchen to Your Table.</h2>
+        <hr class="gold-rule" style="margin-left:0">
+        <p>Comforting Jamaican favourites, prepared with care and served with love. Grandma is in the kitchen — the seasoning, the smoke, the slow simmer — so every plate tastes like home.</p>
+        <p>Open Friday, Saturday &amp; Sunday — on announced dates. Come hungry.</p>
+        <p><a class="btn" href="#menu">Order Now</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band">
+    <svg class="leaf" style="left:3%;top:10px;width:130px" viewBox="0 0 120 60" aria-hidden="true"><path d="M60 55 C40 30 20 18 2 14 C22 10 44 18 60 34 C76 18 98 10 118 14 C100 18 80 30 60 55Z" fill="#1d7a3a"/></svg>
+    <svg class="leaf" style="right:3%;bottom:10px;width:130px;animation-delay:1.4s" viewBox="0 0 120 60" aria-hidden="true"><path d="M60 55 C40 30 20 18 2 14 C22 10 44 18 60 34 C76 18 98 10 118 14 C100 18 80 30 60 55Z" fill="#1d7a3a"/></svg>
+    <h2>Ready for a Taste of Home?</h2>
+    <a class="btn" href="#menu">Place Your Order</a>
+  </section>
+
+  <!-- VISIT + TRACK -->
+  <section class="section visit" id="track">
+    <div class="wrap visit-grid">
+      <div>
+        <h2>Visit Us in the Bronx</h2>
+        <p>4015 Edson Ave, Bronx, New York</p>
+        <p>Open Friday, Saturday &amp; Sunday — on announced dates.</p>
+        <p>Call ahead and your plate will be waiting.</p>
+        <a class="btn" href="tel:+16466693814">Call (646) 669-3814</a>
+        <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=4015+Edson+Ave+Bronx+NY" target="_blank" rel="noopener">Get Directions</a>
+      </div>
+      <div class="tracker-card">
+        <h3>Track Your Order</h3>
+        <p style="color:var(--muted);margin-top:0">Enter your order number, e.g. FLG-123456.</p>
+        <div class="row">
+          <input id="trackInput" type="text" placeholder="FLG-######" autocomplete="off">
+          <button class="btn" id="trackBtn" type="button">Track</button>
+        </div>
+        <div id="trackResult" style="margin-top:14px"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KITCHEN BOARD (admin only, shown after login) -->
+  <section class="section admin-section hidden" id="adminSection">
+    <div class="wrap">
+      <h2 class="section-title" style="text-align:left">Kitchen Board</h2>
+      <p style="color:var(--muted);margin-top:0">Only you can see this. Menu, orders and settings — all in one place.</p>
+      <div class="admin-tabs" role="tablist">
+        <button type="button" data-tab="menu" class="on">Menu</button>
+        <button type="button" data-tab="orders">Orders</button>
+        <button type="button" data-tab="settings">Settings</button>
+        <button type="button" data-tab="account">Account</button>
+        <button type="button" id="adminLogoutBtn" style="margin-left:auto">Log Out</button>
+      </div>
+      <div id="adminTabRoot"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <span class="monogram">FLG</span>
+      <h4 style="margin-top:8px">FINGA LICKIN GUD</h4>
+      <p>JAMAICAN FOOD SOLD HERE</p>
+      <p>4015 Edson Ave, Bronx, New York</p>
+      <p><a href="tel:+16466693814">(646) 669-3814</a></p>
+      <p>Open Friday, Saturday &amp; Sunday — on announced dates</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <a href="#menu">Menu</a>
+      <a href="#kitchen">Our Kitchen</a>
+      <a href="#track">Track Order</a>
+      <a href="#" id="adminFooterLink">Admin Login</a>
+    </div>
+    <div class="pwa-box" id="pwaBox">
+      <h4>Get the Finga Lickin Gud App</h4>
+      <p>Add us to your home screen for one-tap ordering.</p>
+      <button class="btn small" id="installBtn" type="button">Install the App</button>
+      <ol id="iosSteps">
+        <li>On iPhone: tap <strong>Share</strong> in Safari, then <strong>Add to Home Screen</strong>.</li>
+        <li>On Android: tap <strong>Install</strong> above, or use the browser menu → <strong>Install app</strong>.</li>
+      </ol>
+    </div>
+  </div>
+  <p class="foot-bottom">© 2026 Finga Lickin Gud · Real Jamaican Flavour. Made Right at Home.</p>
+</footer>
+
+<!-- CART DRAWER -->
+<aside class="drawer" id="cartDrawer" aria-label="Your order">
+  <header><h3>Your Order</h3><button class="close-x" id="cartCloseBtn" type="button" aria-label="Close">×</button></header>
+  <div class="drawer-body" id="cartBody"></div>
+  <footer>
+    <div class="totals" id="cartTotals"></div>
+    <p style="color:var(--muted);font-size:13px;margin:10px 0">Delivery is $15. Free delivery on orders over $80. Pickup is always free.</p>
+    <button class="btn" id="checkoutBtn" type="button" style="width:100%">Checkout</button>
+  </footer>
+</aside>
+
+<!-- CHECKOUT MODAL -->
+<div class="modal-back" id="checkoutModal">
+  <div class="modal" role="dialog" aria-label="Checkout">
+    <div style="display:flex;justify-content:space-between;align-items:start">
+      <h3>Checkout</h3><button class="close-x" data-close="checkoutModal" type="button" aria-label="Close">×</button>
+    </div>
+    <p class="sub">Pickup: 4015 Edson Ave, Bronx, NY · Delivery: $15, free over $80.</p>
+    <div class="err" id="checkoutErr"></div>
+    <form id="checkoutForm">
+      <div class="field"><label>How would you like your food?</label>
+        <div class="radio-row">
+          <label class="radio-pill on"><input type="radio" name="otype" value="delivery" checked> Delivery</label>
+          <label class="radio-pill"><input type="radio" name="otype" value="pickup"> Pickup</label>
+        </div>
+      </div>
+      <div class="field"><label for="coName">Your name</label><input id="coName" required maxlength="80" autocomplete="name"></div>
+      <div class="field"><label for="coPhone">Phone number</label><input id="coPhone" required maxlength="30" type="tel" autocomplete="tel"></div>
+      <div class="field" id="addressField"><label for="coAddress">Delivery address</label><input id="coAddress" maxlength="200" autocomplete="street-address"></div>
+      <div class="field"><label for="coNotes">Notes for the kitchen (optional)</label><textarea id="coNotes" rows="2" maxlength="300"></textarea></div>
+      <div class="field"><label>How will you pay?</label>
+        <div class="radio-row">
+          <label class="radio-pill on"><input type="radio" name="pay" value="zelle" checked> Zelle</label>
+          <label class="radio-pill"><input type="radio" name="pay" value="cashapp"> Cash App</label>
+          <label class="radio-pill"><input type="radio" name="pay" value="cod"> Cash on Delivery / Pickup</label>
+        </div>
+        <p class="hint">Zelle and Cash App: after you place your order, your receipt shows a QR code to scan and pay. Put your order number in the payment note.</p>
+      </div>
+      <div class="totals" id="checkoutTotals"></div>
+      <div class="modal-actions">
+        <button class="btn ghost" type="button" data-close="checkoutModal">Back</button>
+        <button class="btn" type="submit">Place Order</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- RECEIPT MODAL -->
+<div class="modal-back" id="receiptModal">
+  <div class="modal receipt" role="dialog" aria-label="Receipt">
+    <div style="display:flex;justify-content:space-between;align-items:start;text-align:left">
+      <h3>Thank You!</h3><button class="close-x" data-close="receiptModal" type="button" aria-label="Close">×</button>
+    </div>
+    <div id="receiptBody"></div>
+    <div class="modal-actions" style="justify-content:center">
+      <button class="btn" type="button" data-close="receiptModal">Done</button>
+    </div>
+  </div>
+</div>
+
+<!-- ADMIN LOGIN / SETUP MODAL -->
+<div class="modal-back" id="adminModal">
+  <div class="modal" role="dialog" aria-label="Kitchen Board login">
+    <div style="display:flex;justify-content:space-between;align-items:start">
+      <h3 id="adminModalTitle">Kitchen Board Login</h3><button class="close-x" data-close="adminModal" type="button" aria-label="Close">×</button>
+    </div>
+    <p class="sub" id="adminModalSub">For the kitchen only. Customers never see this.</p>
+    <div class="err" id="adminErr"></div>
+    <div class="ok" id="adminOk"></div>
+    <form id="adminForm">
+      <div class="field"><label for="adminEmail">Email</label><input id="adminEmail" type="email" required autocomplete="email"></div>
+      <div class="field"><label for="adminPassword">Password</label><input id="adminPassword" type="password" required autocomplete="current-password"></div>
+      <div class="modal-actions">
+        <button class="btn ghost" type="button" data-close="adminModal">Cancel</button>
+        <button class="btn" type="submit" id="adminSubmitBtn">Log In</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="/app.js"></script>
+</body>
+</html>
