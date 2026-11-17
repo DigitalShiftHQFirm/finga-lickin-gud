@@ -1,21 +1,28 @@
 # Render deploy for Finga Lickin Gud.
-# Free plan, NO persistent disk: on the free tier the SQLite database
-# (menu edits, orders, admin login) resets when Render restarts or
-# redeploys the service. That is the trade-off of the free plan — the
-# menu and settings re-seed from the code on every fresh boot, and the
-# owner re-runs first-time setup if the database is ever wiped.
-# Move to a paid plan with a persistent disk (mountPath /var/data/flg
-# + DATA_DIR=/var/data/flg) to keep orders and the admin login forever.
+# Starter plan WITH a persistent disk: the SQLite database (menu edits,
+# orders, admin login) lives on the disk at /var/data/flg and survives
+# restarts and redeploys. That is the fix for the free-tier wipe — on
+# the free plan every redeploy reset the database and the owner had to
+# re-run first-time setup.
+# The disk is managed in the Render dashboard (the service was created
+# there, not from this Blueprint); this file records the setup so a
+# future Blueprint sync matches the live service.
 services:
   - type: web
     name: finga-lickin-gud
     runtime: node
-    plan: free
+    plan: starter
     buildCommand: npm install
     startCommand: npm start
     healthCheckPath: /
+    disk:
+      name: flg-data
+      mountPath: /var/data/flg
+      sizeGB: 1
     envVars:
       - key: NODE_VERSION
         value: 24
+      - key: DATA_DIR
+        value: /var/data/flg
       # Set this as a SECRET env var in the Render dashboard (never here):
       # SESSION_SECRET — signs the 30-day admin session cookies.
