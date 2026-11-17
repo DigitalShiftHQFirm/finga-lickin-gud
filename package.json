@@ -1,0 +1,1 @@
+{"dependencies":{"express":"^4.21.2"},"description":"Finga Lickin Gud — Jamaican restaurant web app: public menu, ordering, tracker, and Kitchen Board admin.","license":"UNLICENSED","main":"server.js","name":"finga-lickin-gud","private":true,"scripts":{"start":"node server.js"},"version":"1.0.0"}
